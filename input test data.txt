@@ -1,0 +1,16 @@
+aceEF	ArcA	0	0	repressor
+aceEF	FNR	0	0	repressor
+ada-alkB	Ada	0	0	repressor
+ada-alkB	Ada	2308477	2308504	activator
+agaR	AgaR	3276705	3276728	repressor
+agaR	AgaR	3276735	3276758	repressor
+alaS	AlaS	2820102	2820135	repressor
+araBAD	AraC	70109	70126	activator
+araBAD	AraC	70130	70147	dual
+araBAD	AraC	70184	70201	repressor
+araBAD	AraC	70201	70221	repressor
+araBAD	AraC	70342	70359	repressor
+araBAD	CRP	70158	70179	activator
+betIBA	ArcA	328584	328598	repressor
+betIBA	ArcA	328652	328666	repressor
+betIBA	BetI	328605	328625	repressor
