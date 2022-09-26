@@ -1,0 +1,41 @@
+Mathematical model transcription of the operon: betIBA
+Generated  states: 7
+Deprecated states: 0
+======================
+variables:
+1	ArcA	;	328584	328598	repressor
+2	ArcA	;	328652	328666	repressor
+3	BetI	;	328605	328625	repressor
+parameters: 28
+V_0	;	Initial rate
+a_basal	;	Basal activity
+k_1	;	ArcA activity
+k_2	;	ArcA activity
+k_3	;	BetI activity
+n_11	;	 ArcA(#1)  Hill parameter
+level_1	;	 ArcA(#1) rate activity parameter
+n_1h1	;	 ArcA(#1)  Hill parameter
+n_2h1	;	 ArcA(#1) ArcA(#2)  Hill parameter
+w12	;	 cooperation parameter
+level_12	;	 ArcA(#1) ArcA(#2)  activity parameter
+n_1h2	;	 ArcA(#1)  Hill parameter
+n_2h2	;	 ArcA(#1) ArcA(#2)  Hill parameter
+n_3h1	;	 ArcA(#1) ArcA(#2) BetI(#3)  Hill parameter
+w123	;	 cooperation parameter
+level_123	;	 ArcA(#1) ArcA(#2) BetI(#3)  activity parameter
+n_1h3	;	 ArcA(#1)  Hill parameter
+n_3h2	;	 ArcA(#1) BetI(#3)  Hill parameter
+w13	;	 cooperation parameter
+level_13	;	 ArcA(#1) BetI(#3)  activity parameter
+n_21	;	 ArcA(#2)  Hill parameter
+level_2	;	 ArcA(#2) rate activity parameter
+n_2h3	;	 ArcA(#2)  Hill parameter
+n_3h3	;	 ArcA(#2) BetI(#3)  Hill parameter
+w23	;	 cooperation parameter
+level_23	;	 ArcA(#2) BetI(#3)  activity parameter
+n_31	;	 BetI(#3)  Hill parameter
+level_3	;	 BetI(#3) rate activity parameter
+
+Numerator = a_basal+(level_1*((ArcA/k_1)^n_11))+(level_12*w12*((ArcA/k_1)^n_1h1)*((ArcA/k_2)^n_2h1))+(level_123*w123*((ArcA/k_1)^n_1h2)*((ArcA/k_2)^n_2h2)*((BetI/k_3)^n_3h1))+(level_13*w13*((ArcA/k_1)^n_1h3)*((BetI/k_3)^n_3h2))+(level_2*((ArcA/k_2)^n_21))+(level_23*w23*((ArcA/k_2)^n_2h3)*((BetI/k_3)^n_3h3))+(level_3*((BetI/k_3)^n_31))
+Denominator = 1+((ArcA/k_1)^n_11)+(w12*(ArcA/k_1)^n_1h1*(ArcA/k_2)^n_2h1)+(w123*(ArcA/k_1)^n_1h2*(ArcA/k_2)^n_2h2*(BetI/k_3)^n_3h1)+(w13*(ArcA/k_1)^n_1h3*(BetI/k_3)^n_3h2)+((ArcA/k_2)^n_21)+(w23*(ArcA/k_2)^n_2h3*(BetI/k_3)^n_3h3)+((BetI/k_3)^n_31)
+f = V_0*Numerator/Denominator

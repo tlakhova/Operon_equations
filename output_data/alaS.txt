@@ -1,0 +1,16 @@
+Mathematical model transcription of the operon: alaS
+Generated  states: 1
+Deprecated states: 0
+======================
+variables:
+1	AlaS	;	2820102	2820135	repressor
+parameters: 5
+V_0	;	Initial rate
+a_basal	;	Basal activity
+k_1	;	AlaS activity
+n_11	;	 AlaS(#1)  Hill parameter
+level_1	;	 AlaS(#1) rate activity parameter
+
+Numerator = a_basal+(level_1*((AlaS/k_1)^n_11))
+Denominator = 1+((AlaS/k_1)^n_11)
+f = V_0*Numerator/Denominator

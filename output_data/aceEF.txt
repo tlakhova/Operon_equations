@@ -1,0 +1,24 @@
+Mathematical model transcription of the operon: aceEF
+Generated  states: 3
+Deprecated states: 0
+======================
+variables:
+1	ArcA	;	0	0	repressor
+2	FNR	;	0	0	repressor
+parameters: 12
+V_0	;	Initial rate
+a_basal	;	Basal activity
+k_1	;	ArcA activity
+k_2	;	FNR activity
+n_11	;	 ArcA(#1)  Hill parameter
+level_1	;	 ArcA(#1) rate activity parameter
+n_1h1	;	 ArcA(#1)  Hill parameter
+n_2h1	;	 ArcA(#1) FNR(#2)  Hill parameter
+w12	;	 cooperation parameter
+level_12	;	 ArcA(#1) FNR(#2)  activity parameter
+n_21	;	 FNR(#2)  Hill parameter
+level_2	;	 FNR(#2) rate activity parameter
+
+Numerator = a_basal+(level_1*((ArcA/k_1)^n_11))+(level_12*w12*((ArcA/k_1)^n_1h1)*((FNR/k_2)^n_2h1))+(level_2*((FNR/k_2)^n_21))
+Denominator = 1+((ArcA/k_1)^n_11)+(w12*(ArcA/k_1)^n_1h1*(FNR/k_2)^n_2h1)+((FNR/k_2)^n_21)
+f = V_0*Numerator/Denominator
