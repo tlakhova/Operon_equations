@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Operon_regulation Plug-in
+Bundle-SymbolicName: ru.nsc.bionet.MGS.mathmodelgenerator.importplugs.operon_regulation;singleton:=true
+Bundle-Version: 0.0.0.1
+Bundle-Activator: ru.nsc.bionet.MGS.mathmodelgenerator.importplugs.operon_regulation.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ ru.nsc.bionet.MGS.MathModelGenerator,
+ ru.nsc.bionet.MGS.utilites
+Eclipse-LazyStart: true

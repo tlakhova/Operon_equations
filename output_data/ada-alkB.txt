@@ -1,0 +1,24 @@
+Mathematical model transcription of the operon: ada-alkB
+Generated  states: 3
+Deprecated states: 0
+======================
+variables:
+1	Ada	;	0	0	repressor
+2	Ada	;	2308477	2308504	activator
+parameters: 12
+V_0	;	Initial rate
+a_basal	;	Basal activity
+k_1	;	Ada activity
+k_2	;	Ada activity
+n_11	;	 Ada(#1)  Hill parameter
+level_1	;	 Ada(#1) rate activity parameter
+n_1h1	;	 Ada(#1)  Hill parameter
+n_2h1	;	 Ada(#1) Ada(#2)  Hill parameter
+w12	;	 cooperation parameter
+level_12	;	 Ada(#1) Ada(#2)  activity parameter
+n_21	;	 Ada(#2)  Hill parameter
+level_2	;	 Ada(#2) rate activity parameter
+
+Numerator = a_basal+(level_1*((Ada/k_1)^n_11))+(level_12*w12*((Ada/k_1)^n_1h1)*((Ada/k_2)^n_2h1))+(level_2*((Ada/k_2)^n_21))
+Denominator = 1+((Ada/k_1)^n_11)+(w12*(Ada/k_1)^n_1h1*(Ada/k_2)^n_2h1)+((Ada/k_2)^n_21)
+f = V_0*Numerator/Denominator

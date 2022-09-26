@@ -1,0 +1,240 @@
+Mathematical model transcription of the operon: araBAD
+Generated  states: 47
+Deprecated states: 4
+======================
+variables:
+1	AraC	;	70109	70126	activator
+2	AraC	;	70130	70147	dual
+3	AraC	;	70184	70201	repressor
+4	AraC	;	70201	70221	repressor
+5	AraC	;	70342	70359	repressor
+6	CRP	;	70158	70179	activator
+parameters: 224
+V_0	;	Initial rate
+a_basal	;	Basal activity
+k_1	;	AraC activity
+k_2	;	AraC activity
+k_3	;	AraC activity
+k_4	;	AraC activity
+k_5	;	AraC activity
+k_6	;	CRP activity
+n_11	;	 AraC(#1)  Hill parameter
+level_1	;	 AraC(#1) rate activity parameter
+n_1h1	;	 AraC(#1)  Hill parameter
+n_2h1	;	 AraC(#1) AraC(#2)  Hill parameter
+w12	;	 cooperation parameter
+level_12	;	 AraC(#1) AraC(#2)  activity parameter
+n_1h2	;	 AraC(#1)  Hill parameter
+n_2h2	;	 AraC(#1) AraC(#2)  Hill parameter
+n_3h1	;	 AraC(#1) AraC(#2) AraC(#3)  Hill parameter
+w123	;	 cooperation parameter
+level_123	;	 AraC(#1) AraC(#2) AraC(#3)  activity parameter
+n_1h3	;	 AraC(#1)  Hill parameter
+n_2h3	;	 AraC(#1) AraC(#2)  Hill parameter
+n_3h2	;	 AraC(#1) AraC(#2) AraC(#3)  Hill parameter
+n_5h1	;	 AraC(#1) AraC(#2) AraC(#3) AraC(#5)  Hill parameter
+w1235	;	 cooperation parameter
+level_1235	;	 AraC(#1) AraC(#2) AraC(#3) AraC(#5)  activity parameter
+n_1h4	;	 AraC(#1)  Hill parameter
+n_2h4	;	 AraC(#1) AraC(#2)  Hill parameter
+n_3h3	;	 AraC(#1) AraC(#2) AraC(#3)  Hill parameter
+n_5h2	;	 AraC(#1) AraC(#2) AraC(#3) AraC(#5)  Hill parameter
+n_6h1	;	 AraC(#1) AraC(#2) AraC(#3) AraC(#5) CRP(#6)  Hill parameter
+w12356	;	 cooperation parameter
+level_12356	;	 AraC(#1) AraC(#2) AraC(#3) AraC(#5) CRP(#6)  activity parameter
+n_1h5	;	 AraC(#1)  Hill parameter
+n_2h5	;	 AraC(#1) AraC(#2)  Hill parameter
+n_3h4	;	 AraC(#1) AraC(#2) AraC(#3)  Hill parameter
+n_6h2	;	 AraC(#1) AraC(#2) AraC(#3) CRP(#6)  Hill parameter
+w1236	;	 cooperation parameter
+level_1236	;	 AraC(#1) AraC(#2) AraC(#3) CRP(#6)  activity parameter
+n_1h6	;	 AraC(#1)  Hill parameter
+n_2h6	;	 AraC(#1) AraC(#2)  Hill parameter
+n_4h1	;	 AraC(#1) AraC(#2) AraC(#4)  Hill parameter
+w124	;	 cooperation parameter
+level_124	;	 AraC(#1) AraC(#2) AraC(#4)  activity parameter
+n_1h7	;	 AraC(#1)  Hill parameter
+n_2h7	;	 AraC(#1) AraC(#2)  Hill parameter
+n_4h2	;	 AraC(#1) AraC(#2) AraC(#4)  Hill parameter
+n_5h3	;	 AraC(#1) AraC(#2) AraC(#4) AraC(#5)  Hill parameter
+w1245	;	 cooperation parameter
+level_1245	;	 AraC(#1) AraC(#2) AraC(#4) AraC(#5)  activity parameter
+n_1h8	;	 AraC(#1)  Hill parameter
+n_2h8	;	 AraC(#1) AraC(#2)  Hill parameter
+n_4h3	;	 AraC(#1) AraC(#2) AraC(#4)  Hill parameter
+n_5h4	;	 AraC(#1) AraC(#2) AraC(#4) AraC(#5)  Hill parameter
+n_6h3	;	 AraC(#1) AraC(#2) AraC(#4) AraC(#5) CRP(#6)  Hill parameter
+w12456	;	 cooperation parameter
+level_12456	;	 AraC(#1) AraC(#2) AraC(#4) AraC(#5) CRP(#6)  activity parameter
+n_1h9	;	 AraC(#1)  Hill parameter
+n_2h9	;	 AraC(#1) AraC(#2)  Hill parameter
+n_4h4	;	 AraC(#1) AraC(#2) AraC(#4)  Hill parameter
+n_6h4	;	 AraC(#1) AraC(#2) AraC(#4) CRP(#6)  Hill parameter
+w1246	;	 cooperation parameter
+level_1246	;	 AraC(#1) AraC(#2) AraC(#4) CRP(#6)  activity parameter
+n_1h10	;	 AraC(#1)  Hill parameter
+n_2h10	;	 AraC(#1) AraC(#2)  Hill parameter
+n_5h5	;	 AraC(#1) AraC(#2) AraC(#5)  Hill parameter
+w125	;	 cooperation parameter
+level_125	;	 AraC(#1) AraC(#2) AraC(#5)  activity parameter
+n_1h11	;	 AraC(#1)  Hill parameter
+n_2h11	;	 AraC(#1) AraC(#2)  Hill parameter
+n_5h6	;	 AraC(#1) AraC(#2) AraC(#5)  Hill parameter
+n_6h5	;	 AraC(#1) AraC(#2) AraC(#5) CRP(#6)  Hill parameter
+w1256	;	 cooperation parameter
+level_1256	;	 AraC(#1) AraC(#2) AraC(#5) CRP(#6)  activity parameter
+n_1h12	;	 AraC(#1)  Hill parameter
+n_2h12	;	 AraC(#1) AraC(#2)  Hill parameter
+n_6h6	;	 AraC(#1) AraC(#2) CRP(#6)  Hill parameter
+w126	;	 cooperation parameter
+level_126	;	 AraC(#1) AraC(#2) CRP(#6)  activity parameter
+n_1h13	;	 AraC(#1)  Hill parameter
+n_3h5	;	 AraC(#1) AraC(#3)  Hill parameter
+w13	;	 cooperation parameter
+level_13	;	 AraC(#1) AraC(#3)  activity parameter
+n_1h14	;	 AraC(#1)  Hill parameter
+n_3h6	;	 AraC(#1) AraC(#3)  Hill parameter
+n_5h7	;	 AraC(#1) AraC(#3) AraC(#5)  Hill parameter
+w135	;	 cooperation parameter
+level_135	;	 AraC(#1) AraC(#3) AraC(#5)  activity parameter
+n_1h15	;	 AraC(#1)  Hill parameter
+n_3h7	;	 AraC(#1) AraC(#3)  Hill parameter
+n_5h8	;	 AraC(#1) AraC(#3) AraC(#5)  Hill parameter
+n_6h7	;	 AraC(#1) AraC(#3) AraC(#5) CRP(#6)  Hill parameter
+w1356	;	 cooperation parameter
+level_1356	;	 AraC(#1) AraC(#3) AraC(#5) CRP(#6)  activity parameter
+n_1h16	;	 AraC(#1)  Hill parameter
+n_3h8	;	 AraC(#1) AraC(#3)  Hill parameter
+n_6h8	;	 AraC(#1) AraC(#3) CRP(#6)  Hill parameter
+w136	;	 cooperation parameter
+level_136	;	 AraC(#1) AraC(#3) CRP(#6)  activity parameter
+n_1h17	;	 AraC(#1)  Hill parameter
+n_4h5	;	 AraC(#1) AraC(#4)  Hill parameter
+w14	;	 cooperation parameter
+level_14	;	 AraC(#1) AraC(#4)  activity parameter
+n_1h18	;	 AraC(#1)  Hill parameter
+n_4h6	;	 AraC(#1) AraC(#4)  Hill parameter
+n_5h9	;	 AraC(#1) AraC(#4) AraC(#5)  Hill parameter
+w145	;	 cooperation parameter
+level_145	;	 AraC(#1) AraC(#4) AraC(#5)  activity parameter
+n_1h19	;	 AraC(#1)  Hill parameter
+n_4h7	;	 AraC(#1) AraC(#4)  Hill parameter
+n_5h10	;	 AraC(#1) AraC(#4) AraC(#5)  Hill parameter
+n_6h9	;	 AraC(#1) AraC(#4) AraC(#5) CRP(#6)  Hill parameter
+w1456	;	 cooperation parameter
+level_1456	;	 AraC(#1) AraC(#4) AraC(#5) CRP(#6)  activity parameter
+n_1h20	;	 AraC(#1)  Hill parameter
+n_4h8	;	 AraC(#1) AraC(#4)  Hill parameter
+n_6h10	;	 AraC(#1) AraC(#4) CRP(#6)  Hill parameter
+w146	;	 cooperation parameter
+level_146	;	 AraC(#1) AraC(#4) CRP(#6)  activity parameter
+n_1h21	;	 AraC(#1)  Hill parameter
+n_5h11	;	 AraC(#1) AraC(#5)  Hill parameter
+w15	;	 cooperation parameter
+level_15	;	 AraC(#1) AraC(#5)  activity parameter
+n_1h22	;	 AraC(#1)  Hill parameter
+n_5h12	;	 AraC(#1) AraC(#5)  Hill parameter
+n_6h11	;	 AraC(#1) AraC(#5) CRP(#6)  Hill parameter
+w156	;	 cooperation parameter
+level_156	;	 AraC(#1) AraC(#5) CRP(#6)  activity parameter
+n_1h23	;	 AraC(#1)  Hill parameter
+n_6h12	;	 AraC(#1) CRP(#6)  Hill parameter
+w16	;	 cooperation parameter
+level_16	;	 AraC(#1) CRP(#6)  activity parameter
+n_21	;	 AraC(#2)  Hill parameter
+level_2	;	 AraC(#2) rate activity parameter
+n_2h13	;	 AraC(#2)  Hill parameter
+n_3h9	;	 AraC(#2) AraC(#3)  Hill parameter
+w23	;	 cooperation parameter
+level_23	;	 AraC(#2) AraC(#3)  activity parameter
+n_2h14	;	 AraC(#2)  Hill parameter
+n_3h10	;	 AraC(#2) AraC(#3)  Hill parameter
+n_5h13	;	 AraC(#2) AraC(#3) AraC(#5)  Hill parameter
+w235	;	 cooperation parameter
+level_235	;	 AraC(#2) AraC(#3) AraC(#5)  activity parameter
+n_2h15	;	 AraC(#2)  Hill parameter
+n_3h11	;	 AraC(#2) AraC(#3)  Hill parameter
+n_5h14	;	 AraC(#2) AraC(#3) AraC(#5)  Hill parameter
+n_6h13	;	 AraC(#2) AraC(#3) AraC(#5) CRP(#6)  Hill parameter
+w2356	;	 cooperation parameter
+level_2356	;	 AraC(#2) AraC(#3) AraC(#5) CRP(#6)  activity parameter
+n_2h16	;	 AraC(#2)  Hill parameter
+n_3h12	;	 AraC(#2) AraC(#3)  Hill parameter
+n_6h14	;	 AraC(#2) AraC(#3) CRP(#6)  Hill parameter
+w236	;	 cooperation parameter
+level_236	;	 AraC(#2) AraC(#3) CRP(#6)  activity parameter
+n_2h17	;	 AraC(#2)  Hill parameter
+n_4h9	;	 AraC(#2) AraC(#4)  Hill parameter
+w24	;	 cooperation parameter
+level_24	;	 AraC(#2) AraC(#4)  activity parameter
+n_2h18	;	 AraC(#2)  Hill parameter
+n_4h10	;	 AraC(#2) AraC(#4)  Hill parameter
+n_5h15	;	 AraC(#2) AraC(#4) AraC(#5)  Hill parameter
+w245	;	 cooperation parameter
+level_245	;	 AraC(#2) AraC(#4) AraC(#5)  activity parameter
+n_2h19	;	 AraC(#2)  Hill parameter
+n_4h11	;	 AraC(#2) AraC(#4)  Hill parameter
+n_5h16	;	 AraC(#2) AraC(#4) AraC(#5)  Hill parameter
+n_6h15	;	 AraC(#2) AraC(#4) AraC(#5) CRP(#6)  Hill parameter
+w2456	;	 cooperation parameter
+level_2456	;	 AraC(#2) AraC(#4) AraC(#5) CRP(#6)  activity parameter
+n_2h20	;	 AraC(#2)  Hill parameter
+n_4h12	;	 AraC(#2) AraC(#4)  Hill parameter
+n_6h16	;	 AraC(#2) AraC(#4) CRP(#6)  Hill parameter
+w246	;	 cooperation parameter
+level_246	;	 AraC(#2) AraC(#4) CRP(#6)  activity parameter
+n_2h21	;	 AraC(#2)  Hill parameter
+n_5h17	;	 AraC(#2) AraC(#5)  Hill parameter
+w25	;	 cooperation parameter
+level_25	;	 AraC(#2) AraC(#5)  activity parameter
+n_2h22	;	 AraC(#2)  Hill parameter
+n_5h18	;	 AraC(#2) AraC(#5)  Hill parameter
+n_6h17	;	 AraC(#2) AraC(#5) CRP(#6)  Hill parameter
+w256	;	 cooperation parameter
+level_256	;	 AraC(#2) AraC(#5) CRP(#6)  activity parameter
+n_2h23	;	 AraC(#2)  Hill parameter
+n_6h18	;	 AraC(#2) CRP(#6)  Hill parameter
+w26	;	 cooperation parameter
+level_26	;	 AraC(#2) CRP(#6)  activity parameter
+n_31	;	 AraC(#3)  Hill parameter
+level_3	;	 AraC(#3) rate activity parameter
+n_3h13	;	 AraC(#3)  Hill parameter
+n_5h19	;	 AraC(#3) AraC(#5)  Hill parameter
+w35	;	 cooperation parameter
+level_35	;	 AraC(#3) AraC(#5)  activity parameter
+n_3h14	;	 AraC(#3)  Hill parameter
+n_5h20	;	 AraC(#3) AraC(#5)  Hill parameter
+n_6h19	;	 AraC(#3) AraC(#5) CRP(#6)  Hill parameter
+w356	;	 cooperation parameter
+level_356	;	 AraC(#3) AraC(#5) CRP(#6)  activity parameter
+n_3h15	;	 AraC(#3)  Hill parameter
+n_6h20	;	 AraC(#3) CRP(#6)  Hill parameter
+w36	;	 cooperation parameter
+level_36	;	 AraC(#3) CRP(#6)  activity parameter
+n_41	;	 AraC(#4)  Hill parameter
+level_4	;	 AraC(#4) rate activity parameter
+n_4h13	;	 AraC(#4)  Hill parameter
+n_5h21	;	 AraC(#4) AraC(#5)  Hill parameter
+w45	;	 cooperation parameter
+level_45	;	 AraC(#4) AraC(#5)  activity parameter
+n_4h14	;	 AraC(#4)  Hill parameter
+n_5h22	;	 AraC(#4) AraC(#5)  Hill parameter
+n_6h21	;	 AraC(#4) AraC(#5) CRP(#6)  Hill parameter
+w456	;	 cooperation parameter
+level_456	;	 AraC(#4) AraC(#5) CRP(#6)  activity parameter
+n_4h15	;	 AraC(#4)  Hill parameter
+n_6h22	;	 AraC(#4) CRP(#6)  Hill parameter
+w46	;	 cooperation parameter
+level_46	;	 AraC(#4) CRP(#6)  activity parameter
+n_51	;	 AraC(#5)  Hill parameter
+level_5	;	 AraC(#5) rate activity parameter
+n_5h23	;	 AraC(#5)  Hill parameter
+n_6h23	;	 AraC(#5) CRP(#6)  Hill parameter
+w56	;	 cooperation parameter
+level_56	;	 AraC(#5) CRP(#6)  activity parameter
+n_61	;	 CRP(#6)  Hill parameter
+level_6	;	 CRP(#6) rate activity parameter
+
+Numerator = a_basal+(level_1*((AraC/k_1)^n_11))+(level_12*w12*((AraC/k_1)^n_1h1)*((AraC/k_2)^n_2h1))+(level_123*w123*((AraC/k_1)^n_1h2)*((AraC/k_2)^n_2h2)*((AraC/k_3)^n_3h1))+(level_1235*w1235*((AraC/k_1)^n_1h3)*((AraC/k_2)^n_2h3)*((AraC/k_3)^n_3h2)*((AraC/k_5)^n_5h1))+(level_12356*w12356*((AraC/k_1)^n_1h4)*((AraC/k_2)^n_2h4)*((AraC/k_3)^n_3h3)*((AraC/k_5)^n_5h2)*((CRP/k_6)^n_6h1))+(level_1236*w1236*((AraC/k_1)^n_1h5)*((AraC/k_2)^n_2h5)*((AraC/k_3)^n_3h4)*((CRP/k_6)^n_6h2))+(level_124*w124*((AraC/k_1)^n_1h6)*((AraC/k_2)^n_2h6)*((AraC/k_4)^n_4h1))+(level_1245*w1245*((AraC/k_1)^n_1h7)*((AraC/k_2)^n_2h7)*((AraC/k_4)^n_4h2)*((AraC/k_5)^n_5h3))+(level_12456*w12456*((AraC/k_1)^n_1h8)*((AraC/k_2)^n_2h8)*((AraC/k_4)^n_4h3)*((AraC/k_5)^n_5h4)*((CRP/k_6)^n_6h3))+(level_1246*w1246*((AraC/k_1)^n_1h9)*((AraC/k_2)^n_2h9)*((AraC/k_4)^n_4h4)*((CRP/k_6)^n_6h4))+(level_125*w125*((AraC/k_1)^n_1h10)*((AraC/k_2)^n_2h10)*((AraC/k_5)^n_5h5))+(level_1256*w1256*((AraC/k_1)^n_1h11)*((AraC/k_2)^n_2h11)*((AraC/k_5)^n_5h6)*((CRP/k_6)^n_6h5))+(level_126*w126*((AraC/k_1)^n_1h12)*((AraC/k_2)^n_2h12)*((CRP/k_6)^n_6h6))+(level_13*w13*((AraC/k_1)^n_1h13)*((AraC/k_3)^n_3h5))+(level_135*w135*((AraC/k_1)^n_1h14)*((AraC/k_3)^n_3h6)*((AraC/k_5)^n_5h7))+(level_1356*w1356*((AraC/k_1)^n_1h15)*((AraC/k_3)^n_3h7)*((AraC/k_5)^n_5h8)*((CRP/k_6)^n_6h7))+(level_136*w136*((AraC/k_1)^n_1h16)*((AraC/k_3)^n_3h8)*((CRP/k_6)^n_6h8))+(level_14*w14*((AraC/k_1)^n_1h17)*((AraC/k_4)^n_4h5))+(level_145*w145*((AraC/k_1)^n_1h18)*((AraC/k_4)^n_4h6)*((AraC/k_5)^n_5h9))+(level_1456*w1456*((AraC/k_1)^n_1h19)*((AraC/k_4)^n_4h7)*((AraC/k_5)^n_5h10)*((CRP/k_6)^n_6h9))+(level_146*w146*((AraC/k_1)^n_1h20)*((AraC/k_4)^n_4h8)*((CRP/k_6)^n_6h10))+(level_15*w15*((AraC/k_1)^n_1h21)*((AraC/k_5)^n_5h11))+(level_156*w156*((AraC/k_1)^n_1h22)*((AraC/k_5)^n_5h12)*((CRP/k_6)^n_6h11))+(level_16*w16*((AraC/k_1)^n_1h23)*((CRP/k_6)^n_6h12))+(level_2*((AraC/k_2)^n_21))+(level_23*w23*((AraC/k_2)^n_2h13)*((AraC/k_3)^n_3h9))+(level_235*w235*((AraC/k_2)^n_2h14)*((AraC/k_3)^n_3h10)*((AraC/k_5)^n_5h13))+(level_2356*w2356*((AraC/k_2)^n_2h15)*((AraC/k_3)^n_3h11)*((AraC/k_5)^n_5h14)*((CRP/k_6)^n_6h13))+(level_236*w236*((AraC/k_2)^n_2h16)*((AraC/k_3)^n_3h12)*((CRP/k_6)^n_6h14))+(level_24*w24*((AraC/k_2)^n_2h17)*((AraC/k_4)^n_4h9))+(level_245*w245*((AraC/k_2)^n_2h18)*((AraC/k_4)^n_4h10)*((AraC/k_5)^n_5h15))+(level_2456*w2456*((AraC/k_2)^n_2h19)*((AraC/k_4)^n_4h11)*((AraC/k_5)^n_5h16)*((CRP/k_6)^n_6h15))+(level_246*w246*((AraC/k_2)^n_2h20)*((AraC/k_4)^n_4h12)*((CRP/k_6)^n_6h16))+(level_25*w25*((AraC/k_2)^n_2h21)*((AraC/k_5)^n_5h17))+(level_256*w256*((AraC/k_2)^n_2h22)*((AraC/k_5)^n_5h18)*((CRP/k_6)^n_6h17))+(level_26*w26*((AraC/k_2)^n_2h23)*((CRP/k_6)^n_6h18))+(level_3*((AraC/k_3)^n_31))+(level_35*w35*((AraC/k_3)^n_3h13)*((AraC/k_5)^n_5h19))+(level_356*w356*((AraC/k_3)^n_3h14)*((AraC/k_5)^n_5h20)*((CRP/k_6)^n_6h19))+(level_36*w36*((AraC/k_3)^n_3h15)*((CRP/k_6)^n_6h20))+(level_4*((AraC/k_4)^n_41))+(level_45*w45*((AraC/k_4)^n_4h13)*((AraC/k_5)^n_5h21))+(level_456*w456*((AraC/k_4)^n_4h14)*((AraC/k_5)^n_5h22)*((CRP/k_6)^n_6h21))+(level_46*w46*((AraC/k_4)^n_4h15)*((CRP/k_6)^n_6h22))+(level_5*((AraC/k_5)^n_51))+(level_56*w56*((AraC/k_5)^n_5h23)*((CRP/k_6)^n_6h23))+(level_6*((CRP/k_6)^n_61))
+Denominator = 1+((AraC/k_1)^n_11)+(w12*(AraC/k_1)^n_1h1*(AraC/k_2)^n_2h1)+(w123*(AraC/k_1)^n_1h2*(AraC/k_2)^n_2h2*(AraC/k_3)^n_3h1)+(w1235*(AraC/k_1)^n_1h3*(AraC/k_2)^n_2h3*(AraC/k_3)^n_3h2*(AraC/k_5)^n_5h1)+(w12356*(AraC/k_1)^n_1h4*(AraC/k_2)^n_2h4*(AraC/k_3)^n_3h3*(AraC/k_5)^n_5h2*(CRP/k_6)^n_6h1)+(w1236*(AraC/k_1)^n_1h5*(AraC/k_2)^n_2h5*(AraC/k_3)^n_3h4*(CRP/k_6)^n_6h2)+(w124*(AraC/k_1)^n_1h6*(AraC/k_2)^n_2h6*(AraC/k_4)^n_4h1)+(w1245*(AraC/k_1)^n_1h7*(AraC/k_2)^n_2h7*(AraC/k_4)^n_4h2*(AraC/k_5)^n_5h3)+(w12456*(AraC/k_1)^n_1h8*(AraC/k_2)^n_2h8*(AraC/k_4)^n_4h3*(AraC/k_5)^n_5h4*(CRP/k_6)^n_6h3)+(w1246*(AraC/k_1)^n_1h9*(AraC/k_2)^n_2h9*(AraC/k_4)^n_4h4*(CRP/k_6)^n_6h4)+(w125*(AraC/k_1)^n_1h10*(AraC/k_2)^n_2h10*(AraC/k_5)^n_5h5)+(w1256*(AraC/k_1)^n_1h11*(AraC/k_2)^n_2h11*(AraC/k_5)^n_5h6*(CRP/k_6)^n_6h5)+(w126*(AraC/k_1)^n_1h12*(AraC/k_2)^n_2h12*(CRP/k_6)^n_6h6)+(w13*(AraC/k_1)^n_1h13*(AraC/k_3)^n_3h5)+(w135*(AraC/k_1)^n_1h14*(AraC/k_3)^n_3h6*(AraC/k_5)^n_5h7)+(w1356*(AraC/k_1)^n_1h15*(AraC/k_3)^n_3h7*(AraC/k_5)^n_5h8*(CRP/k_6)^n_6h7)+(w136*(AraC/k_1)^n_1h16*(AraC/k_3)^n_3h8*(CRP/k_6)^n_6h8)+(w14*(AraC/k_1)^n_1h17*(AraC/k_4)^n_4h5)+(w145*(AraC/k_1)^n_1h18*(AraC/k_4)^n_4h6*(AraC/k_5)^n_5h9)+(w1456*(AraC/k_1)^n_1h19*(AraC/k_4)^n_4h7*(AraC/k_5)^n_5h10*(CRP/k_6)^n_6h9)+(w146*(AraC/k_1)^n_1h20*(AraC/k_4)^n_4h8*(CRP/k_6)^n_6h10)+(w15*(AraC/k_1)^n_1h21*(AraC/k_5)^n_5h11)+(w156*(AraC/k_1)^n_1h22*(AraC/k_5)^n_5h12*(CRP/k_6)^n_6h11)+(w16*(AraC/k_1)^n_1h23*(CRP/k_6)^n_6h12)+((AraC/k_2)^n_21)+(w23*(AraC/k_2)^n_2h13*(AraC/k_3)^n_3h9)+(w235*(AraC/k_2)^n_2h14*(AraC/k_3)^n_3h10*(AraC/k_5)^n_5h13)+(w2356*(AraC/k_2)^n_2h15*(AraC/k_3)^n_3h11*(AraC/k_5)^n_5h14*(CRP/k_6)^n_6h13)+(w236*(AraC/k_2)^n_2h16*(AraC/k_3)^n_3h12*(CRP/k_6)^n_6h14)+(w24*(AraC/k_2)^n_2h17*(AraC/k_4)^n_4h9)+(w245*(AraC/k_2)^n_2h18*(AraC/k_4)^n_4h10*(AraC/k_5)^n_5h15)+(w2456*(AraC/k_2)^n_2h19*(AraC/k_4)^n_4h11*(AraC/k_5)^n_5h16*(CRP/k_6)^n_6h15)+(w246*(AraC/k_2)^n_2h20*(AraC/k_4)^n_4h12*(CRP/k_6)^n_6h16)+(w25*(AraC/k_2)^n_2h21*(AraC/k_5)^n_5h17)+(w256*(AraC/k_2)^n_2h22*(AraC/k_5)^n_5h18*(CRP/k_6)^n_6h17)+(w26*(AraC/k_2)^n_2h23*(CRP/k_6)^n_6h18)+((AraC/k_3)^n_31)+(w35*(AraC/k_3)^n_3h13*(AraC/k_5)^n_5h19)+(w356*(AraC/k_3)^n_3h14*(AraC/k_5)^n_5h20*(CRP/k_6)^n_6h19)+(w36*(AraC/k_3)^n_3h15*(CRP/k_6)^n_6h20)+((AraC/k_4)^n_41)+(w45*(AraC/k_4)^n_4h13*(AraC/k_5)^n_5h21)+(w456*(AraC/k_4)^n_4h14*(AraC/k_5)^n_5h22*(CRP/k_6)^n_6h21)+(w46*(AraC/k_4)^n_4h15*(CRP/k_6)^n_6h22)+((AraC/k_5)^n_51)+(w56*(AraC/k_5)^n_5h23*(CRP/k_6)^n_6h23)+((CRP/k_6)^n_61)
+f = V_0*Numerator/Denominator

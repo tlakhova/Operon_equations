@@ -1,0 +1,24 @@
+Mathematical model transcription of the operon: agaR
+Generated  states: 3
+Deprecated states: 0
+======================
+variables:
+1	AgaR	;	3276705	3276728	repressor
+2	AgaR	;	3276735	3276758	repressor
+parameters: 12
+V_0	;	Initial rate
+a_basal	;	Basal activity
+k_1	;	AgaR activity
+k_2	;	AgaR activity
+n_11	;	 AgaR(#1)  Hill parameter
+level_1	;	 AgaR(#1) rate activity parameter
+n_1h1	;	 AgaR(#1)  Hill parameter
+n_2h1	;	 AgaR(#1) AgaR(#2)  Hill parameter
+w12	;	 cooperation parameter
+level_12	;	 AgaR(#1) AgaR(#2)  activity parameter
+n_21	;	 AgaR(#2)  Hill parameter
+level_2	;	 AgaR(#2) rate activity parameter
+
+Numerator = a_basal+(level_1*((AgaR/k_1)^n_11))+(level_12*w12*((AgaR/k_1)^n_1h1)*((AgaR/k_2)^n_2h1))+(level_2*((AgaR/k_2)^n_21))
+Denominator = 1+((AgaR/k_1)^n_11)+(w12*(AgaR/k_1)^n_1h1*(AgaR/k_2)^n_2h1)+((AgaR/k_2)^n_21)
+f = V_0*Numerator/Denominator
