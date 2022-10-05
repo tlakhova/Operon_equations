@@ -1,6 +1,6 @@
 Mathematical model transcription of the operon: betIBA
 Generated  states: 7
-Deprecated states: 0
+Blocked states: 0
 ======================
 variables:
 1	ArcA	;	328584	328598	repressor

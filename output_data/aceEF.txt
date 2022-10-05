@@ -1,6 +1,6 @@
 Mathematical model transcription of the operon: aceEF
 Generated  states: 3
-Deprecated states: 0
+Blocked states: 0
 ======================
 variables:
 1	ArcA	;	0	0	repressor

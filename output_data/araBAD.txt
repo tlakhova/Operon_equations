@@ -1,6 +1,6 @@
 Mathematical model transcription of the operon: araBAD
 Generated  states: 47
-Deprecated states: 4
+Blocked states: 4
 ======================
 variables:
 1	AraC	;	70109	70126	activator

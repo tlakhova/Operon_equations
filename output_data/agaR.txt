@@ -1,6 +1,6 @@
 Mathematical model transcription of the operon: agaR
 Generated  states: 3
-Deprecated states: 0
+Blocked states: 0
 ======================
 variables:
 1	AgaR	;	3276705	3276728	repressor

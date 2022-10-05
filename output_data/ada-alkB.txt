@@ -1,6 +1,6 @@
 Mathematical model transcription of the operon: ada-alkB
 Generated  states: 3
-Deprecated states: 0
+Blocked states: 0
 ======================
 variables:
 1	Ada	;	0	0	repressor

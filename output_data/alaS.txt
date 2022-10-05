@@ -1,6 +1,6 @@
 Mathematical model transcription of the operon: alaS
 Generated  states: 1
-Deprecated states: 0
+Blocked states: 0
 ======================
 variables:
 1	AlaS	;	2820102	2820135	repressor
