@@ -82,7 +82,7 @@ public class OperonMathModelGenerator
 				
 				
 				outFileContent += "Generated  states: "+stateCounter[0]+MGSstringHelper.NEXT_LINE+
-			                      "Deprecated states: "+stateCounter[1]+MGSstringHelper.NEXT_LINE+
+			                      "Blocked states: "+stateCounter[1]+MGSstringHelper.NEXT_LINE+
 				                   "======================"+MGSstringHelper.NEXT_LINE;
 				// Variables
 				outFileContent += "variables:"+MGSstringHelper.NEXT_LINE;
