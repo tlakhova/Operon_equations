@@ -35,6 +35,7 @@ Operon_equations outputs text files with tabular separator. The file includes in
 
 **Example of output data**
 
+```
 Mathematical model transcription of the operon: **operon_name**
 
 Generated  states: **number_of_generated_states**
@@ -67,7 +68,7 @@ Numerator = (generating of equation numerator)
 Denominator = (generating of equation denominator)
 
 f = V_0*Numerator/Denominator (total equation)
-
+```
 
 
 
