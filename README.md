@@ -70,6 +70,8 @@ Denominator = (generating of equation denominator)
 f = V_0*Numerator/Denominator (total equation)
 ```
 
+[1] Likhoshvai, V.; Ratushny, A. Generalized Hill Function Method for Modeling Molecular Processes. J. Bioinform. Comput. Biol. 2007, 05, 521–531, doi:10.1142/S0219720007002837.
+
 
 
 
