@@ -12,7 +12,7 @@ transcription factors binding sites - TFBS
 # Input data
 
 Operon_equations requers text file with tabular separator. This file including information about operon name,TF name regulating the operons,
-left and right TFBS positions (absolute positions in genome of the sites) and regulation type of the TF. This file have not title.
+left and right TFBS positions (absolute positions in genome of the sites) and regulation type of the TF. There is no header in this file.
 
 **Example of input data**
 
