@@ -57,7 +57,7 @@ a_basal	;	Basal activity
 
 k_i	;	TF activity
 
-n_i<comples_index>	;	 TF (it number is written across #) Hill parameter
+n_i<complex_index>	;	 TF (it number is written across #) Hill parameter
 
 level_i;	 TF (it number is written across #) rate activity parameter
 
