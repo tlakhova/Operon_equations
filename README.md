@@ -72,7 +72,7 @@ f = V_0*Numerator/Denominator (total equation)
 
 See [output_data folder](https://github.com/tlakhova/Operon_equations/tree/main/output_data) to example outputs. 
 
-[input_test_data.txt](https://github.com/tlakhova/Operon_equations/blob/main/input_test_data.txt) is a input example. This file is used to produce output_data_folder
+[input_test_data.txt](https://github.com/tlakhova/Operon_equations/blob/main/input_test_data.txt) is a input example. This file is used to produce `output_data` folder
 
 [1] [Likhoshvai, V.; Ratushny, A. Generalized Hill Function Method for Modeling Molecular Processes. J. Bioinform. Comput. Biol. 2007, 05, 521–531, doi:10.1142/S0219720007002837](https://www.worldscientific.com/doi/abs/10.1142/S0219720007002837).
 
