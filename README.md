@@ -31,7 +31,47 @@ Operon_2  TF2 0 0 dual
 
 # Output data
 
-Operon_equations outputs text files with tabular separator. The file includes information about generated or blocked states, the number of variables, parameter description and form of equation (1).
-```
-f=V_0∙(a_basal+〖level〗_1 (〖TF〗_1/k_1 )^(n_1 )/(1+(〖TF〗_1/k_1 )^(n_1 )) (1)
-```
+Operon_equations outputs text files with tabular separator. The file includes information about generated or blocked states, the number of variables, parameter description and form of equation from [1].
+
+**Example of output data**
+
+Mathematical model transcription of the operon: **operon_name**
+
+Generated  states: **number_of_generated_states**
+
+Blocked states: **number_of_generated_states**
+
+======================
+
+variables: **number_of_variables**
+
+1. (The variables are described here)
+2.  ...
+
+parameters: **number_of_parameters**
+
+V_0	;	Initial rate
+
+a_basal	;	Basal activity
+
+k_i	;	TF activity
+
+n_i<comples_index>	;	 TF (it number is written across #) Hill parameter
+
+level_i;	 TF (it number is written across #) rate activity parameter
+
+w_ij	;	 cooperation parameter (There is parameter when TFBS do not intercross)
+
+Numerator = (generating of equation numerator)
+
+Denominator = (generating of equation denominator)
+
+f = V_0*Numerator/Denominator (total equation)
+
+
+
+
+
+
+
+
