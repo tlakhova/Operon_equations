@@ -7,4 +7,4 @@ test_of_tania.txt
 result
 operon_regulation.jar
 src/ru/operon_regulation/nsc/bionet/MGS/utilites/NamedCollection.java
-src/ru/operon_regulation/nsc/bionet/MGS/utilites/synonyms
+src/ru/operon_regulation/nsc/bionet/MGS/utilites/synonyms/**
