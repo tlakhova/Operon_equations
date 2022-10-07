@@ -2,8 +2,7 @@ package ru.operon_regulation.nsc.bionet.MGS.utilites.mathtree;
 
 import java.util.Map;
 
-//This class uses by building math model
-//It
+//This class is used by building math model in "makeModelsAsText" class
 
 public class SimpleMathWorker
 {

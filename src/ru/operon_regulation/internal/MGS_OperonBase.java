@@ -6,6 +6,7 @@ import java.util.List;
 import ru.operon_regulation.internal.interfaces.IMGS_Operon;
 import ru.operon_regulation.internal.interfaces.IMGS_OperonBase;
 
+// This class contains methods for add operons in array
 
 public class MGS_OperonBase implements IMGS_OperonBase
 {

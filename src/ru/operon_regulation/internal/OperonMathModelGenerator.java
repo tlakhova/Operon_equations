@@ -13,10 +13,12 @@ import ru.operon_regulation.nsc.bionet.MGS.utilites.MGSstringHelper;
 import ru.operon_regulation.nsc.bionet.MGS.utilites.mathtree.SimpleMathWorker;
 
 
+// This class is needed for construction frame math model
+// Here the TF binding options are enumerated
 
 public class OperonMathModelGenerator
 {
-	// TFactorsMaxBorder - max value TFactors correspond an operon
+	// TFactorsMaxBorder - max value TF for corresponding an operon
 	// because of combinatorial complexity
 	static final int TFactorsMaxBorder = 15;
 	static final String paramInitialName = "V_0";
@@ -25,7 +27,7 @@ public class OperonMathModelGenerator
 	static final String paramDegreeName = "n_";
 	static final String paramLevelName = "level_";
 
-
+	//A create model as text for each operon
 	public static void makeModelsAsText(IMGS_OperonBase base, String outFolder)
 	{
 		String outFileContent = "";
@@ -41,6 +43,9 @@ public class OperonMathModelGenerator
 			outFileContent += "Mathematical model transcription of the operon: "
 					+ operName + MGSstringHelper.NEXT_LINE;
 
+			//Checking the number of TFs for one operon
+			// If TFs are > 15, the model will not be built.
+			//
 			if (oper.getTFactors().length > TFactorsMaxBorder)
 			{
 				outFileContent += "Mathematical model couldn't be generated for the appropriate time due to TFactors size"+MGSstringHelper.NEXT_LINE;
@@ -50,7 +55,7 @@ public class OperonMathModelGenerator
 			{
 				// paramName, in paramComments
 				ArrayList<String[]> parameters = new ArrayList<String[]>();
-				
+				// Set the parameters: V_0, a_basal and 1 -  that are in the formula for each operon
 				parameters.add(new String[] { paramInitialName,
 				"Initial rate" });
 
@@ -63,6 +68,7 @@ public class OperonMathModelGenerator
 				IMGS_TFactor[] TFactors = oper.getTFactors();						
 
 				int sz = TFactors.length;
+				//elements needed for realization deep-first search algorithm
 				boolean[] elements = new boolean[sz];
 				Arrays.fill(elements, false);
 				for (int i = 0; i < sz; i++)
@@ -74,9 +80,11 @@ public class OperonMathModelGenerator
 
 				}
 				
-				/** counter of generated[0] states and deprecated[1] states */
-				int stateCounter[]={0,0};      
-				
+				/** counter of generated[0] states and blocked[1] states */
+				int stateCounter[]={0,0};
+
+				// Recursive function
+				// Here implemented by deep-first search algorithm
 				giveFreeElement(elements, 0, TFactors, nomenatorDenomenator,
 						parameters,stateCounter);		
 				
@@ -135,7 +143,8 @@ public class OperonMathModelGenerator
 		boolean interceptFlag = false;
 		for (int i = start; i < elements.length; i++)
 		{
-			elements[i] = true;
+
+			elements[i] = true; // to be able to move to another node
 			interceptFlag = false;
 			for (int backInd = i - 1; backInd >= 0; backInd--)
 			{
@@ -151,16 +160,17 @@ public class OperonMathModelGenerator
 			if (!interceptFlag)
 			{
 				stateCounter[0]+=1;
+				//generation of the terms of the equation depending on the location of the binding sites
 				printIt(elements, Tfactors, nomenatorDenomenator, parameters);
 				giveFreeElement(elements, i + 1, Tfactors, nomenatorDenomenator,
 						parameters,stateCounter);
 				
 			}
 			else				
-			{  // generation of deprecated states
+			{  // generation of blocked states
 				stateCounter[1]+=1;
 			}
-			elements[i] = false;
+			elements[i] = false; // to be able to move to another node
 		}
 	}
 
@@ -179,9 +189,10 @@ public class OperonMathModelGenerator
 		String OmegaParameter = "";
 		String MultiHillParameter = "";
 		boolean isRepressor = false;
-		int elCounter = 2;                // element counter. If there is only one element, the "omega" parameter is not needed.
+		int elCounter = 2;// element counter. If there is only one element, the "omega" parameter is not needed.
         String namesHeaders="";
 
+		//Calculation of the unique index for the Hill parameter
 		int isComplexState = 2;    // if it will be 0 - then it is Complex State like Tfi*Tfj...
 		for (int i = 0; i < TFactors.length; i++)
 		{
@@ -194,7 +205,8 @@ public class OperonMathModelGenerator
 				break;
 			}
 		}
-
+		//Constructing a term for each TF or
+		// combination of TFs depending on the location of their TFBSs
 		for (int i = 0; i < TFactors.length; i++)
 		{
 			if (elements[i])
@@ -221,8 +233,8 @@ public class OperonMathModelGenerator
 				// w_i
 				OmegaParameter += ((postfix.length() > 1) ? "_" : "") + postfix;
 
-// Hill part
-//				for complex index Hill degree
+				// Hill part
+				// for complex index Hill degree
 				String HillPostfixAdderPRM = "h";
 //				MultiHillParameter = paramDegreeName + SigmaParameter + (isComplexState>0?"":"h");
 				MultiHillParameter = paramDegreeName + (i + 1) + (isComplexState>0?"":HillPostfixAdderPRM);
@@ -254,15 +266,15 @@ public class OperonMathModelGenerator
 		//SigmaParameter = SigmaParameter.substring(1); // erase first "*"
 
 		//====================
-        // calculate denominator first        
+        // calculate denominator first
+		// elCounter == 0 when TFBSs the TF pairs considered in this iteration do not overlap
 		if (elCounter == 0)
 		{
 			OmegaParameter = "w" + OmegaParameter;
+			// parameter in nominator
+			// level_ij*w_ij*
 			parameters
 					.add(new String[] { OmegaParameter, " cooperation parameter" });
-
-			// parameter in nominator
-			// level_ij*w_ig*
 
 			// for denominator
 			subFormula = OmegaParameter + "*" + subFormula;
@@ -276,7 +288,7 @@ public class OperonMathModelGenerator
 		{
 			OmegaParameter = "";
 			//====================
-			// calculate nominator
+			// calculate nominator when considering a single TF
 
 			SigmaParameter = paramLevelName+SigmaParameter;
 			parameters

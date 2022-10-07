@@ -5,7 +5,7 @@ import java.util.Arrays;
 import ru.operon_regulation.internal.interfaces.IMGS_TFactor;
 
 // This class obtained information from input file about TF name, its regulation type and left and right TFBS positions
-// The class needs for check of TFBS position overlap for each TF
+// The class needed for check of TFBS position overlap for each TF
 // Checking site overlaps is done in pairs each time
 
 public class MGS_TFactor extends MGS_info implements IMGS_TFactor
@@ -27,7 +27,8 @@ public class MGS_TFactor extends MGS_info implements IMGS_TFactor
 		super(TFname, info);
 		TFsynonyms = Arrays.copyOf(synonyms, synonyms.length);
 		TFtype = type;
-			
+		//A check is made to see if the TFBS coordinates increase,
+		// if given in reverse order, they will swap places.
 		leftPosition= Math.abs(leftPos);
 		rightPosition= Math.abs(rightPos);
 		if (rightPosition<leftPosition)
@@ -79,6 +80,8 @@ public class MGS_TFactor extends MGS_info implements IMGS_TFactor
 	 * only 1 and 2 has no interactions, thats why we search them.  
 	 *         
 	 * */
+
+	//A check of TFBS position overlap for pairs TFs
 	public boolean isInterceptWith(IMGS_TFactor tf)
 	{
 		boolean ret = true;

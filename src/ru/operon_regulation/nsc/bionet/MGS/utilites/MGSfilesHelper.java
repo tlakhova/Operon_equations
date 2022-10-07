@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.RandomAccessFile;
 
-//This classes needs for read and write files
+//These classes needed for read and write files
 // If the file does not exist, an exception will be raised
 
 public class MGSfilesHelper
@@ -30,7 +30,7 @@ public class MGSfilesHelper
 		}
 		return ret;
 	}
-
+	//Returns the contents of the file using the path to the file
 	static public String getFileContent(String path)
 	{
 		String ret = "";

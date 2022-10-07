@@ -12,6 +12,9 @@ import ru.operon_regulation.internal.objects.MGS_TFactor;
 import ru.operon_regulation.nsc.bionet.MGS.utilites.MGSfilesHelper;
 import ru.operon_regulation.nsc.bionet.MGS.utilites.MGSstringHelper;
 
+//The class is needed to build relationships between elements and write to the file
+//The printOperonBase subclass for writing don't used in current version
+
 public class OperonFabric
 {
 	static public IMGS_OperonBase createOperonBase(String baseContent)
@@ -21,7 +24,7 @@ public class OperonFabric
 //		printOperonBase(opBase);
 		return opBase;
 	}
-
+	//The contents of the input file are parsed
 	static public void operonParser(String content, IMGS_OperonBase opBase)
 	{
 		StringTokenizer lineToken = new StringTokenizer(content, MGSstringHelper.NEXT_LINE);
@@ -39,12 +42,16 @@ public class OperonFabric
 			String finishPos = partToken.nextToken();
 			String type = partToken.nextToken();
 
+			// A create object - TF that contains information about TFBS positions
 			IMGS_TFactor tf = new MGS_TFactor(TFName, "", type, Integer
 					.valueOf(startPos), Integer.valueOf(finishPos),
 					new String[] { TFName });
 
-			doFlag = lineToken.hasMoreTokens(); // 
+			doFlag = lineToken.hasMoreTokens();
 
+			//Further, a check is carried out to determine if there are several TFs,
+			// which operons they belong to,
+			// and to record them in the appropriate list under the operon.
 			if ((!currentName.equals(opName)) || !doFlag)// end of the operon description
 			{
 				if (currentName.equals(""))

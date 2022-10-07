@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 /**
- * @author sibGenius (Kazantsev Fedor) e-mail: kazfdr@bionet.nsc.ru
- * 
  * it class used to parse string with equation (a=s+d^r*h) into the tree
  */
 public class SimpleMathTree
