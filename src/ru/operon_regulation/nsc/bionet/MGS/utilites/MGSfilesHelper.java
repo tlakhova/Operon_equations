@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.RandomAccessFile;
 
+//This classes needs for read and write files
+// If the file does not exist, an exception will be raised
+
 public class MGSfilesHelper
 {
 	static public String getFileContent(File fileToRead)

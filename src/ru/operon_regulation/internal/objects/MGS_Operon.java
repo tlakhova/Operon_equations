@@ -7,6 +7,9 @@ import ru.operon_regulation.internal.interfaces.IMGS_Gene;
 import ru.operon_regulation.internal.interfaces.IMGS_Operon;
 import ru.operon_regulation.internal.interfaces.IMGS_TFactor;
 
+// This class contains arrays genes and TFs
+// It is connects genes and TFs with operon
+
 public class MGS_Operon extends MGS_info implements IMGS_Operon
 {
 	private IMGS_Gene[] OperonGenes;

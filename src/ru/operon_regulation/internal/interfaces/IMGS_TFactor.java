@@ -1,9 +1,5 @@
 package ru.operon_regulation.internal.interfaces;
 
-/**
- * @author sibGenius
- *
- */
 public interface IMGS_TFactor extends IMGS_info
 {
 	final String ACTIVATOR="activator";

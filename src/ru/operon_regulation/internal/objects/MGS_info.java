@@ -2,6 +2,7 @@ package ru.operon_regulation.internal.objects;
 
 import ru.operon_regulation.internal.interfaces.IMGS_info;
 
+// This class contains information and names which obtained from input file
 public abstract class MGS_info implements IMGS_info
 {
 	private String name;

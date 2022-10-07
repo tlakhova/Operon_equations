@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 import ru.operon_regulation.internal.interfaces.IMGS_TFactor;
 
+// This class obtained information from input file about TF name, its regulation type and left and right TFBS positions
+// The class needs for check of TFBS position overlap for each TF
+// Checking site overlaps is done in pairs each time
+
 public class MGS_TFactor extends MGS_info implements IMGS_TFactor
 {
 	private String[] TFsynonyms;
