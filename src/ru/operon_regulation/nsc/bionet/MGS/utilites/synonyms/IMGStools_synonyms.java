@@ -1,4 +1,4 @@
-package ru.nsc.bionet.MGS.utilites.synonyms;
+package ru.operon_regulation.nsc.bionet.MGS.utilites.synonyms;
 
 public interface IMGStools_synonyms
 {

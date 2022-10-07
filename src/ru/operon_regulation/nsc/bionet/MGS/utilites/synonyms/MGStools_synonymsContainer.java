@@ -1,4 +1,4 @@
-package ru.nsc.bionet.MGS.utilites.synonyms;
+package ru.operon_regulation.nsc.bionet.MGS.utilites.synonyms;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -17,7 +17,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import ru.nsc.bionet.MGS.utilites.MGSfilesHelper;
+import ru.operon_regulation.nsc.bionet.MGS.utilites.MGSfilesHelper;
 
 public class MGStools_synonymsContainer implements IMGStools_synonymsContainer
 {

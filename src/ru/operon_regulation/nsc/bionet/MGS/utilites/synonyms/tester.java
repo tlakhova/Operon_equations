@@ -1,4 +1,4 @@
-package ru.nsc.bionet.MGS.utilites.synonyms;
+package ru.operon_regulation.nsc.bionet.MGS.utilites.synonyms;
 
 import java.util.TreeMap;
 

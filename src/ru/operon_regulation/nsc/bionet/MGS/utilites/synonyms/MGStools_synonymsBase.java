@@ -1,11 +1,11 @@
-package ru.nsc.bionet.MGS.utilites.synonyms;
+package ru.operon_regulation.nsc.bionet.MGS.utilites.synonyms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
 
-import ru.nsc.bionet.MGS.utilites.MGSfilesHelper;
+import ru.operon_regulation.nsc.bionet.MGS.utilites.MGSfilesHelper;
 
 public class MGStools_synonymsBase implements IMGStools_synonyms
 {
@@ -15,10 +15,10 @@ public class MGStools_synonymsBase implements IMGStools_synonyms
 	private String baseInfo;
 
 	/**
-	 * осуществляет уникальную идентификацию синонимов по сущностям. т.е. каждой
-	 * сущности присваивается уникальный идентификатор (int). При изменениии
-	 * (объединении) синонимов новой записи присваивается новый идентификатор
-	 * (counter+1), старые затираются.
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅ.пїЅ. пїЅпїЅпїЅпїЅпїЅпїЅ
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (int). пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	 * (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	 * (counter+1), пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 	 */
 	private Integer counter;
 
@@ -126,7 +126,7 @@ public class MGStools_synonymsBase implements IMGStools_synonyms
 	}
 
 	/**
-	 * TODO добавить проверку на синонимичность вносимых данных
+	 * TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	 * 
 	 */
 
