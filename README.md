@@ -76,6 +76,9 @@ See [output_data folder](https://github.com/tlakhova/Operon_equations/tree/main/
 
 [1] [Likhoshvai, V.; Ratushny, A. Generalized Hill Function Method for Modeling Molecular Processes. J. Bioinform. Comput. Biol. 2007, 05, 521–531, doi:10.1142/S0219720007002837](https://www.worldscientific.com/doi/abs/10.1142/S0219720007002837).
 
+# Publication
+[Lakhova T. N. et al. Algorithm for the Reconstruction of Mathematical Frame Models of Bacterial Transcription Regulation //Mathematics. – 2022. – Т. 10. – №. 23. – С. 4480. doi: 10.3390/math10234480](https://www.mdpi.com/2227-7390/10/23/4480). 
+
 
 
 
